@@ -1,7 +1,6 @@
-import { useState } from "react";
 import "../css/App.css";
 import ListContacts from "./ListContacts";
-
+import React, { useState } from "react";
 const App = () => {
   const removeContact = (contact) => {
     setContacts(contacts.filter((c) => c.id !== contact.id));
@@ -30,8 +29,8 @@ const App = () => {
 
   return (
     <div>
-      <ListContacts contacts={contacts} />
       <ListContacts contacts={contacts} onDeleteContact={removeContact} />
     </div>
   );
 };
+export default App;

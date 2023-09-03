@@ -13,7 +13,6 @@ const ListContacts = ({ contacts, onDeleteContact }) => {
             <p>{contact.name}</p>
             <p>{contact.handle}</p>
           </div>
-          <button className="contact-remove">Remove</button>
           <button
             className="contact-remove"
             onClick={() => onDeleteContact(contact)}
